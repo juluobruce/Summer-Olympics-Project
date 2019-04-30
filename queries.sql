@@ -125,41 +125,37 @@ WHERE "Medal" IS NOT NULL;
 Select * from us
 
 SELECT 
-	COUNT("Medal") as "Medal Awards", 
-	"Sex"
+	"Sex",
+	COUNT("Medal") as "Medal Awards" 
 FROM US
 WHERE "Medal" IS NOT NULL
 GROUP BY("Sex")
 
 
-SELECT COUNT("Medal"),
-	sum(case when "Sex" = M then 1 else 0 end) Male,
-  	sum(case when "Sex" = F then 1 else 0 end) Female
-from us
-group by Sex
+
+
+-- Create a table with Most Medal events (US)
+SELECT 
+	"Event",
+	COUNT("Medal") as "Medal Awards" 
+FROM US
+WHERE "Medal" IS NOT NULL
+GROUP BY("Event") 
+ORDER BY("Medal Awards") DESC
+
 
 -- Create a table with Event, Medal, Games, Region
 
 
--- Create a table with Most Medal events
-
 select * from us
 
-SELECT SUM(CASE WHEN Type = 'Blue' THEN 1 ELSE 0 END) AS Blue, 
-SUM(CASE WHEN Type = 'Red' THEN 1 ELSE 0 END) AS Red FROM TABLE
+Select "Event",
+"Games",
+"region",
+"Medal"
+from US
+Where "Medal"='Gold'
 
 
 
-
-
-
-
-
-
-
-
-SELECT ("Event"), COUNT(*) 
-FROM us 
-GROUP BY "Event"
-ORDER BY "Event" Asc,
 
