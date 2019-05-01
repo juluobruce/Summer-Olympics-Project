@@ -159,3 +159,47 @@ Where "Medal"='Gold'
 
 
 
+ -- creating  a table for the whole olympic set
+ 
+ DROP TABLE track_olympics ;
+
+CREATE TABLE track_olympics (
+	"ID" INT NOT NULL,
+	"Name" VARCHAR(250) NOT NULL,
+	"Sex" VARCHAR(250) NOT NULL, 
+	"Age" FLOAT,
+	"Team" VARCHAR(250) NOT NULL,
+	"Games" VARCHAR(250) NOT NULL,
+	"Year" FLOAT NOT NULL,
+	"Season" VARCHAR(250) NOT NULL,
+	"City" VARCHAR(250) NOT NULL,
+	"Sport" VARCHAR(250) NOT NULL,
+	"Event" VARCHAR(250) NOT NULL,
+	"Medal" VARCHAR(250),
+	"region" VARCHAR (250)	
+);
+
+--Create a table with Event, Medal, Games, Region
+
+
+Select 
+"Event",
+"Games" AS "Summer Games",
+"region",
+"Medal"
+from track_olympics
+Where "Medal"='Gold' 
+AND "region" ='USA' or "region" = 'UK'
+or "region" = 'Russia' or "region" = 'France' or "region" = 'Germany'
+Order BY "Summer Games" ASC
+
+
+
+
+
+
+Order by "Games" ASC
+
+
+
+
