@@ -189,8 +189,8 @@ Select
 "Medal"
 from track_olympics
 Where "Medal"='Gold' 
-AND "region" ='USA' or "region" = 'UK'
-or "region" = 'Russia' or "region" = 'France' or "region" = 'Germany'
+AND ("region" ='USA' or "region" = 'UK'
+or "region" = 'Russia' or "region" = 'France' or "region" = 'Germany')
 Order BY "Summer Games" ASC
 
 
