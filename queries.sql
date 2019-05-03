@@ -198,7 +198,6 @@ Order BY "Summer Games" ASC
 
 
 
-Order by "Games" ASC
 
 
 
