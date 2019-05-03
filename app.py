@@ -46,5 +46,10 @@ def indexes():
     return render_template('index.html')
 
 
+@app.route('/usa.html/')
+def usaflag():
+    return render_template('usaflag.png')
+
+
 if __name__ == "__main__":
     app.run(debug=True)

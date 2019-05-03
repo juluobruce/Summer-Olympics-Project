@@ -23,7 +23,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 // Import Data
-d3.csv("https://raw.githubusercontent.com/juluobruce/Data-Journalism-D3/master/Data%20Journalism%20and%20D3/StarterCode/assets/data/data.csv")
+d3.csv("https://raw.githubusercontent.com/juluobruce/Summer-Olympics-Project/master/data/track_olympics.csv")
 
   .then(function(censusData) {
 
