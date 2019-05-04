@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/d3Style.css">
     
+    <!-- Drew added -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- Drew added -->
+    <script src="/static/js/us_script.js"></script>
+
+
+    
 </head>
 
 <body>
@@ -31,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">History</a>
+                <a class="navbar-brand" href="/index">History</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,28 +49,35 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="usa.html">USA</a>
+                                <!-- Drew changed -->
+                                <a href="/usa">USA</a>
                             </li>
                             <li>
-                                <a href="germany.html">Germany</a>
+                                <!-- Drew changed -->
+                                <a href="/germany">Germany</a>
                             </li>
                             <li>
-                                <a href="france.html">France</a>
+                                <!-- Drew changed -->
+                                <a href="/france">France</a>
                             </li>
                             <li>
-                                <a href="uk.html">UK</a>
+                                <!-- Drew changed -->
+                                <a href="/uk">UK</a>
                             </li>
                             <li>
-                                <a href="russia.html">Russia</a>
+                                <!-- Drew changed -->
+                                <a href="/russia">Russia</a>
                             </li>
 
                         </ul>
                     </li>
                     <li>
-                        <a href="events.html">Events</a>
+                        <!-- Drew changed -->
+                        <a href="/events">Events</a>
                     </li>
                     <li>
-                        <a href="sources.html">Sources</a>
+                        <!-- Drew changed -->
+                        <a href="/sources">Sources</a>
                     </li>
                 </ul>
             </div>
@@ -87,9 +101,9 @@
                         <h1>United States</h1>
                         <hr>
                         <figure>
-                            <!--<a target="_blank" href="Ploting_graph_of_Cities.png">
-                                <img id="viz-main" src="Ploting_graph_of_Cities.png" alt="Latitude of cities">
-                            </a> -->
+                            <div class="pull-left">
+                                <img src="/static/us.png" alt="Medal & Ages">
+                              </div>
                         </figure>
 
                         <section id="USA">
@@ -99,7 +113,7 @@
 
                             <p> The United States leads the world by hosting 8 Olympic Games including 4 Summer Olympics and 4 Winter Olympics (1904, 1932, 1984, 1996, 1932, 1960, 1980, 2002). 
                                 US Summer Olympic venues have included St. Louis, Atlanta, and two times in Los Angeles. 
-                                Los Angeles  will be hosting the Olympics again in 2028.
+                                LA  will be hosting the Olympics again in 2028.
                             </p>
 
                             <p> The United States has a total of 1080 medals, 852 males & 228 females.
@@ -120,3 +134,14 @@
                     <div class="box box-right">
                         <h2>Medaled Events</h2>
                         <hr>
+                        <div class="medal-table">
+
+                        </div>
+
+                       
+                    </div>  
+            </div>
+        </div>
+    </div>
+</div>
+</body>

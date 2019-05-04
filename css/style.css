@@ -11,6 +11,17 @@
   margin-left:75px !important;
 }
 
+table {
+  border-collapse: collapse;
+  border: 2px black solid;
+  font: 12px sans-serif;
+}
+
+td {
+  border: 1px black solid;
+  padding: 5px;
+}
+
 .sigline{
   color: #cc9600;
   text-align: right;

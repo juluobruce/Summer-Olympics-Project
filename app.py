@@ -12,43 +12,39 @@ def index():
     return render_template("index.html", list=country_list)
 
 
-@app.route('/events.html/')
+@app.route('/events/')
 def events():
     return render_template('events.html')
 
 
-@app.route('/usa.html/')
+@app.route('/usa/')
 def usa():
     return render_template('usa.html')
 
-@app.route('/germany.html/')
+@app.route('/germany/')
 def germany():
     return render_template('germany.html')
 
-@app.route('/uk.html/')
+@app.route('/uk/')
 def uk():
     return render_template('uk.html')
 
-@app.route('/france.html/')
+@app.route('/france/')
 def france():
     return render_template('france.html')
 
-@app.route('/russia.html/')
+@app.route('/russia/')
 def russia():
     return render_template('russia.html')
 
-@app.route('/sources.html/')
+@app.route('/sources/')
 def sources():
     return render_template('sources.html')
 
-@app.route('/index.html/')
+@app.route('/index/')
 def indexes():
     return render_template('index.html')
 
-
-@app.route('/usa.html/')
-def usaflag():
-    return render_template('usaflag.png')
 
 
 if __name__ == "__main__":
