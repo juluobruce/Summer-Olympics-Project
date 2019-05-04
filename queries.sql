@@ -181,6 +181,7 @@ CREATE TABLE track_olympics (
 
 --Create a table with Event, Medal, Games, Region
 
+select *  from track_olympics
 
 Select 
 "Event",
@@ -195,9 +196,30 @@ Order BY "Summer Games" ASC
 
 
 
+ 
+DROP TABLE golden_events ;
+
+CREATE TABLE golden_events (
+	"Age" FLOAT,
+	"Event" VARCHAR(250) NOT NULL,
+	"Year" FLOAT NOT NULL,
+	"Games" VARCHAR(250) NOT NULL,
+	"region" VARCHAR (250),	
+	"Medal" VARCHAR(250)
+);
 
 
 
+select * from golden_events
+
+select
+"Year",
+count("Medal" = 'Gold') as "Gold Medal",
+count("Medal" = 'Silver') as "Silver Medal",
+count("Medal" = 'Bronze') as "Bronze Medal"
+from golden_events
+group by "Year" 
+Order by "Year" ASC
 
 
 
