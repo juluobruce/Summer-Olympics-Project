@@ -30,7 +30,7 @@ var tabulate = function (data,columns) {
   }
 
 // Create the rest of the countries in separate scripts  
-d3.csv("https://raw.githubusercontent.com/juluobruce/Summer-Olympics-Project/master/static/data/france_medal.csv", function(data) {
+d3.csv("https://raw.githubusercontent.com/juluobruce/Summer-Olympics-Project/master/static/data/germany_medal.csv", function(data) {
     //var parsedCSV = d3.csv.parseRows(data);
     console.log(data)
     
